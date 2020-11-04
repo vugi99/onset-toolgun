@@ -144,7 +144,7 @@ AddEvent("OnRenderHUD", function()
    end
 end)
 
-AddEvent("OnPlayerWeaponShot", function(hittype, hitid, hitX, hitY, hitZ, startX, startY, startZ, normalX, normalY, normalZ, BoneName)
+AddEvent("OnPlayerWeaponShot", function(weapid, hittype, hitid, hitX, hitY, hitZ, startX, startY, startZ, normalX, normalY, normalZ, BoneName)
     if (GetPlayerWeapon(GetPlayerEquippedWeaponSlot(GetPlayerId())) == Toolgun_weapon_id and toolselected) then
         if ToolgunTools[toolselected].Tool_table then
            CallEvent(ToolgunTools[toolselected].Shoot_event, index_selected, ToolgunTools[toolselected].Tool_table[index_selected], hittype, hitid, hitX, hitY, hitZ, startX, startY, startZ, normalX, normalY, normalZ, BoneName)

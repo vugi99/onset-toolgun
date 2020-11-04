@@ -9,7 +9,7 @@ local regTool1 = {
 local regTool2 = {
     name = "Spawn Object Tool",
     Shoot_event = "OnToolgunSpawnObject",
-    Tool_index_max = 1872
+    Tool_index_max = 1886
 }
 local regTool3 = {
     name = "Remove Tool",

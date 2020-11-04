@@ -5,7 +5,7 @@ end)
 
 AddRemoteEvent("RE_OnToolgunDestroyThing", function(ply, hittype, hitid)
     if (hittype == 3 and IsValidVehicle(hitid)) then
-       DestroyVehicle(hitid)
+        DestroyVehicle(hitid)
     elseif (hittype == 4 and IsValidNPC(hitid)) then
         DestroyNPC(hitid)
     elseif (hittype == 5 and IsValidObject(hitid)) then
